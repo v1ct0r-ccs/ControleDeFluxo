@@ -7,21 +7,21 @@ public class Exercicio_Modulo10 {
         Scanner s = new Scanner(System.in);
 
         System.out.println("Digite a nota do Primeiro Trimestre: ");
-        int nota1 = s.nextInt();
+        double nota1 = s.nextDouble();
         System.out.println("Digite a nota do Segundo Trimestre: ");
-        int nota2 = s.nextInt();
+        double nota2 = s.nextDouble();
         System.out.println("Digite a nota do Terceiro Trimestre: ");
-        int nota3 = s.nextInt();
+        double nota3 = s.nextDouble();
         System.out.println("Digite a nota do Quarto Trimestre ");
-        int nota4 = s.nextInt();
+        double nota4 = s.nextDouble();
         String media = getResultado((nota1+nota2+nota3+nota4)/4);
         System.out.println(media);
     }
 
-    public static String getResultado(int resultado) {
-        if (resultado >=0 && resultado <5) {
+    public static String getResultado(double resultado) {
+        if (resultado >=0.0 && resultado <5.0) {
             return "Média: " + resultado + " - Reprovado";
-        } else if (resultado >=5 && resultado <7) {
+        } else if (resultado >=5.0 && resultado <7.0) {
             return "Média: " + resultado + " - Recuperação";
         }else {
             return "Média: " + resultado + " - Aprovado";
